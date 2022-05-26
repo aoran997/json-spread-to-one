@@ -43,8 +43,7 @@ function _restore (data: { [x: string]: any }) {
     for (let i = li.length - 1; i > 0; i--) {
       cc = { [li[i]]: cc }
     }
-    console.log(Object.keys(cc)[0])
-    tmp[Object.keys(cc)[0]] = Object.assign(tmp[Object.keys(cc)[0]] || {}, cc)
+    tmp[li[0]] = cc
   }
   return tmp
 }

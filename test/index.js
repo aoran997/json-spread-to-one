@@ -10,6 +10,6 @@ let tmpdata = {
 }
 
 import { spread, restore } from '../dist/index.js'
+
 restore(spread(tmpdata))
 console.log(spread(tmpdata))
-console.log(restore(spread(tmpdata)))

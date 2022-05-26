@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+      "target": "ES6",
+      "module": "es6",
+      "noImplicitUseStrict": true,
+      "jsx": "preserve",
+      "sourceMap": false,
+      "esModuleInterop": true,
+      "baseUrl": ".",
+      "declaration": true,
+      "outDir": "dist",
+    },
+    "include": ["index.ts"]
+  }
+  

@@ -47,7 +47,12 @@ this.index.m = (function (exports) {
           for (let i = li.length - 1; i > 0; i--) {
               cc = { [li[i]]: cc };
           }
-          tmp[li[0]] = cc;
+          if (tmp[li[0]]) {
+              tmp[li[0]] = Object.assign({}, tmp[li[0]], cc);
+          }
+          else {
+              tmp[li[0]] = cc;
+          }
       }
       return tmp;
   }
